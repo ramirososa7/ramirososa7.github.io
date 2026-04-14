@@ -125,7 +125,7 @@ section{
 
 .btn{
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: green;
     color: white;
     padding: .8rem 1.5rem;
     border-radius: 5px;
@@ -379,4 +379,32 @@ section{
 
 .project-links a:hover{
     color: var(--primary-color);
+}
+
+footer{
+    background-color: var(--darker-bg);
+    border-top:1px solid var(--border-color);
+    padding: 2rem 5%;
+}
+
+.footer-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-widht:480px) {
+    header{
+        position: static;
+    }
+    #navbar{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .hero-content, .nav-links{
+        flex-direction: column;
+    }
 }

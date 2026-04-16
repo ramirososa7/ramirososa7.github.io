@@ -125,7 +125,7 @@ section{
 
 .btn{
     display: inline-block;
-    background-color: green;
+    background-color: var(--primary-color);
     color: white;
     padding: .8rem 1.5rem;
     border-radius: 5px;

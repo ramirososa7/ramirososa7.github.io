@@ -12,10 +12,12 @@
         <nav id="navbar">
             <div class="logo">Ramiro<span> Sosa</span></div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+                <li data-key="inicio"><a href="#inicio">Inicio</a></li>
+                <li data-key="exper"><a href="#experiencia">Experiencia</a></li>
+                <li data-key="proy"><a href="#proyectos">Proyectos</a></li>
             </ul>
+            <button onclick="cambiarIdioma('es')">ES</button>
+            <button onclick="cambiarIdioma ('en')">EN</button>
         </nav>
     </header>
 
@@ -24,15 +26,15 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Ramiro Sosa</h1>
-                    <h2>Desarrollador en formación</h2>
-                    <p>Estudiante de Analista de Sistemas| HTML,CSS,JavaScript,Python,SQL,GIT</p>
+                    <h2 data-key="titulo">Desarrollador en formación</h2>
+                    <p data-key="descripcion">Estudiante de Analista de Sistemas| HTML,CSS,JavaScript,Python,SQL,GIT</p>
                     <div class="social-links">
                         <a href="https://github.com/ramirososa7" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.instagram.com/ramiiro.sosa/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/ramiro-sosa-805080316/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://wa.me/5492352498395" target="_blank" class="btn"><i class="fab fa-whatsapp"></i></a>
                     </div>
-                    <a href="archivo.pdf" download class="btn boton-descarga"><i class="fa fa-download"></i> Descargar CV</a>
+                    <a data-key="descarga" href="archivo.pdf" download class="btn boton-descarga"><i class="fa fa-download"></i> Descargar CV</a>
                 </div>
                 <div class="hero-image">
                     <img src="fotocarnet.jpg" alt="profile image">
@@ -41,13 +43,13 @@
         </section>
         
         <section id="experiencia" class="experiencia">
-            <h2 class="section-title">Experiencia Laboral</h2>
+            <h2 data-key="exp" class="section-title">Experiencia Laboral</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <span class="date">2022-Actualidad</span>
-                        <h3>Buscando mi primera oportunidad en el mundo IT</h3>
-                        <p>Actualmente formándome como Analista de Sistemas y desarrollando proyectos propios para mejorar mis habilidades.</p>
+                        <span data-key="tiempo" class="date">2022-Actualidad</span>
+                        <h3 data-key="busqueda">Buscando mi primera oportunidad en el mundo IT</h3>
+                        <p data-key="actualmente">Actualmente formándome como Analista de Sistemas y desarrollando proyectos propios para mejorar mis habilidades.</p>
                         <ul class="skills">
                             <li>HTML</li>
                             <li>CSS</li>
@@ -62,15 +64,15 @@
         </section>
 
         <section id="proyectos" class="projects">
-            <h2 class="section-title">Proyectos Personales</h2>
+            <h2 class="section-title" data-key="proyectos">Proyectos Personales</h2>
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-img">
                         <img src="portfolio.png" alt="proyecto 1">
                     </div>
                     <div class="project-info">
-                        <h3>Portfolio Digital</h3>
-                        <p>Portfolio web responsive para mostrar mis proyectos y habilidades como desarrollador en formación.</p>
+                        <h3 data-key="portfolio">Portfolio Digital</h3>
+                        <p data-key="descripciontrabajo">Portfolio web responsive para mostrar mis proyectos y habilidades como desarrollador en formación.</p>
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -79,7 +81,7 @@
                         </div>
                         <div class="project-links">
                             <a href="file:///home/ramon/Escritorio/Escuela/PracticasProf/portafoli/portafolio3/index.html#contacto" target="_blank"><i class="fas fa-link"></i>Portfolio</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i>Código</a>
+                            <a data-key="codigo" href="#" target="_blank"><i class="fab fa-github"></i>Código</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +91,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 Ramiro Sosa - Todos los derechos reservados</p>
+            <p data-key="footer">&copy; 2026 Ramiro Sosa - Todos los derechos reservados</p>
             <div class="social-links">
                         <a href="https://github.com/ramirososa7" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.instagram.com/ramiiro.sosa/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -98,5 +100,6 @@
             </div>
         </div>
     </footer>
+    <script src="Java.js"></script>
 </body>
 </html>

@@ -408,3 +408,15 @@ footer{
         flex-direction: column;
     }
 }
+
+#language{
+    display: flex;
+    gap: .5rem;
+}
+
+.lang-button{
+    background-color: transparent;
+    font-size: 1.75rem;
+    border: none;
+    cursor: pointer;
+}

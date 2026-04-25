@@ -19,7 +19,9 @@ const textos ={
         intech:"2022-Actualidad",
         tecnicatura:"Tecnicatura en Analista de Sistemas",
         skills:"Habilidades",
-        estudios:"Estudios"
+        estudios:"Estudios",
+        tooltip_es:"Español",
+        tooltip_en:"Ingles"
     },
     en: {
         inicio:"Home",
@@ -41,7 +43,9 @@ const textos ={
         intech:"2022-Present",
         tecnicatura:"Technical degree in Systems Analysis",
         skills:"Skills",
-        estudios:"Studies"
+        estudios:"Studies",
+        tooltip_es:"Spanish",
+        tooltip_en:"English"
     }
 };
 
@@ -50,5 +54,10 @@ function cambiarIdioma(idioma){
     elementos.forEach(button => {
         const key = button.getAttribute("data-key");
         button.textContent = textos[idioma][key];
+    });
+      const tooltips = document.querySelectorAll("[data-tooltip]");
+    tooltips.forEach(el => {
+        const key = el.getAttribute("data-tooltip");
+        el.setAttribute("title", textos[idioma][key]);
     });
 }
